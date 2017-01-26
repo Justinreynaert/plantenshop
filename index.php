@@ -78,7 +78,7 @@ if(isset($_GET['page'])){
 			//content
 			$tpl['rechts'] 				= getGalerij();
 
-			$tpl['paginaScripts'] 		= getScriptElements(array("js/vendor/lightbox2-master/dist/js/lightbox.js"));
+			$tpl['paginaScripts'] 		= getScriptElements(array("js/vendor/lightbox2-master/dist/js/lightbox.js","js/jquery.ui.knipoog.js","js/galerij.js"));
 
 			$tpl['paginaStylesheets']	= getLinkElements("js/vendor/lightbox2-master/dist/css/lightbox.css");
 			

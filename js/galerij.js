@@ -1,6 +1,9 @@
 // JavaScript Document
 // voor fotogalerij pagina
 
+$(window).load(function(){
+	$('figure').knipoog();
+});
 
 /*
 Elk element van bevat achtereenvolgens:

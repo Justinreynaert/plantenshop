@@ -12,6 +12,17 @@
             padding: 4
         },
 
+        enable: function() {
+
+            $.widget.prototype.enable.apply( this, arguments );
+            this._setMouseHandler();
+        },
+
+        disable: function() {
+            $.widget.prototype.disable.apply( this, arguments );
+            this._removeMouseHandler();
+        },
+
         _create: function(){
             // initialistie van de widget
             //this.element bevat hetfigure element als JQset
@@ -74,11 +85,15 @@
 
             self.element.hover(
                 function() {
-                    self.element.cap.show(o.speed);
+                    self.element.cap.show("slide",{direction:"left"},o.speed,function(){});
                 },
                 function() {
-                    self.element.cap.hide(o.speed);
+                    self.element.cap.show("slide",{direction:"right"},o.speed,function(){});
                 }
-            )}
+            )},
+
+        _removeMouseHandler: function() {
+            this.element.unbind('mouseenter mouseleave')
+        }
     }); // einde widget
 })(jQuery);

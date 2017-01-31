@@ -2,7 +2,21 @@
 // voor fotogalerij pagina
 
 $(window).load(function(){
-	$('figure').knipoog();
+	//$('figure').knipoog();
+
+	$('.knop').button();
+
+	$('figure').knipoog({bgColor:"cyan", color:"navy", location:"bottom"});
+
+	// event handlers knoppen
+
+	$('#af').on("click", function(){
+		$('figure').knipoog("disable");
+	});
+
+    $('#aan').on("click", function(){
+        $('figure').knipoog("enable");
+    })
 });
 
 /*

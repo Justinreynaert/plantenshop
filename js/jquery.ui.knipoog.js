@@ -93,7 +93,7 @@
             )},
 
         _removeMouseHandler: function() {
-            this.element.unbind('mouseenter mouseleave')
+            this.element.unbind('mouseenter mouseleave');
         }
     }); // einde widget
 })(jQuery);

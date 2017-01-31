@@ -14,7 +14,8 @@ $pService = new PlantenService();
 		$kleur 			= (isset($_GET['kleur']))?$_GET['kleur']:'%';
 		$hoogte_min 	= (isset($_GET['hoogte_min']))?intval($_GET['hoogte_min']):0;
 		$hoogte_max 	= (isset($_GET['hoogte_max']))?intval($_GET['hoogte_max']):10000;
-	//	$bl_b 			= (isset($_GET['bl_b']))?intval($_GET['bl_b']):0;
+
+//	$bl_b 			= (isset($_GET['bl_b']))?intval($_GET['bl_b']):0;
 //		$bl_e 			= (isset($_GET['bl_e']))?intval($_GET['bl_e']):11;
 //		$prijs_min 		= (isset($_GET['prijs_min']))?intval($_GET['prijs_min']):0;
 //		$prijs_max 		= (isset($_GET['prijs_max']))?intval($_GET['prijs_max']):100;
